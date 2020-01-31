@@ -27,7 +27,6 @@ class RatingsProcessor(InlineProcessor):
 
 class RatingsExtension(Extension):
     def extendMarkdown(self, mdown: Markdown):
-        print(type(mdown))
         mdown.registerExtension(self)
         mdown.inlinePatterns.register(RatingsProcessor(RATING_RE), "stars-rating", 75)
 
