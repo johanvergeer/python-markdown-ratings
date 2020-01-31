@@ -36,15 +36,15 @@ def test_re(md_input, expected):
     [
         (
             "this has a [rating:0] rating",
-            '<p>this has a <span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></span> rating</p>',
+            '<p>this has a <span><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span> rating</p>',
         ),
         (
             "this has a [rating:1] rating",
-            '<p>this has a <span><span class="fa fa-star star-checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></span> rating</p>',
+            '<p>this has a <span><i class="fas fa-star star-checked"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span> rating</p>',
         ),
         (
             "this has a [rating:5] rating",
-            '<p>this has a <span><span class="fa fa-star star-checked"></span><span class="fa fa-star star-checked"></span><span class="fa fa-star star-checked"></span><span class="fa fa-star star-checked"></span><span class="fa fa-star star-checked"></span></span> rating</p>',
+            '<p>this has a <span><i class="fas fa-star star-checked"></i><i class="fas fa-star star-checked"></i><i class="fas fa-star star-checked"></i><i class="fas fa-star star-checked"></i><i class="fas fa-star star-checked"></i></span> rating</p>',
         ),
     ],
 )

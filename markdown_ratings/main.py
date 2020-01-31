@@ -18,8 +18,8 @@ class RatingsProcessor(InlineProcessor):
         rating_value = int(m.group(1))
 
         for r in range(0, 5):
-            class_ = "fa fa-star star-checked" if r < rating_value else "fa fa-star"
-            rating_item = etree.Element("span", {"class": class_})
+            class_ = "fas fa-star star-checked" if r < rating_value else "far fa-star"
+            rating_item = etree.Element("i", {"class": class_})
             rating_parent.append(rating_item)
 
         return rating_parent, m.start(0), m.end(0)
